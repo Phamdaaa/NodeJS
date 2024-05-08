@@ -3,23 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>07 Array 03</title>
 </head>
 <body>
+    <input type="file" id="Input">
+    <button id="Button">Leer Archivo</button>
+
     <script src="script.js"></script>
-    <input type="file" name="inputfile" id="inputfile" accept=".txt">
-    <br>
-
-    <pre id="output"></pre>
-
-    <script type="text/javascript">
-        document.getElementById('inputfile').addEventListener('change', function () {
-            let fr = new FileReader();
-            fr.onload = function () {
-                document.getElementById('output').textContent = fr.result;
-            }
-            fr.readAsText(this.files[0]);
-        })
-    </script>
 </body>
 </html>
